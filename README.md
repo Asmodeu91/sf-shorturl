@@ -9,7 +9,7 @@
 *    originalUrl - оригинальная ссылка - обязательное поле
 *    userId - uuid пользователя полученный в /api/url/registration - обязательное поле
 *    expirationDate - дата окончания срока короткой ссылки в формате 2024-01-01T12:00:00
-*    limitVisits - количесво просмотров 
+*    limitVisits - количесво просмотров (лимит можно снять , задав значение -1)
 
 возвращает короткую ссылку в формате http://localhost:8080/api/url/ZTU3ZTcxOWZlMzliZTViYi1kZTFhLTQxODEtOTY5OC1iYmRlMjRjZjVhM2Ex
 
