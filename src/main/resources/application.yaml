@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: shoturl
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/shorturl}
+    driver-class-name: org.postgresql.Driver
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:postgres}
+  sql:
+    init:
+      mode: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+shorturl:
+  max-lifetime-days: 90
+  max-visitor-count: 100
+  base-url: http://localhost:8080
